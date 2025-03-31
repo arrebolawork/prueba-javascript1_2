@@ -30,7 +30,7 @@ function wordCount(string, char) {
   if (typeof string !== "string") return console.log("No has introducido una cadena de texto o nombre!");
   let count = 0;
   for (let i = 0; i < string.length; i++) {
-    if (string[i] === char) {
+    if (string[i].toLowerCase() === char.toLowerCase()) {
       count++;
     }
   }
